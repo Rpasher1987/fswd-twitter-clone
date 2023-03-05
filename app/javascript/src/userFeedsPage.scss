@@ -1,31 +1,72 @@
-// Place all the styles related to the Homepage controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
-.main {
-  background-color: #abdbe3;
-  min-height: 100vh;
-}
-  
-.navbar {
-    background-color: #fff;
-}
-  
-.navbar-header {
-    float: left;
-}
-  
-.navbar-right {
-    float: right;
-}
-  
-.fa-twitter {
-    color: #00aced;
-    font-size: 24px;
+* {
+  margin: 0;
+  padding: 0;
+  transition: 0.2s ease;
+  user-select: none;
 }
 
-#footer {
-    font-size: 17px;
+// --- Genral --- //
+body {
+  color: #141923;
+}
+
+a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #141923;
+}
+
+a:hover {
+  color: #536571;
+}
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+  height: 100vh;
+}
+
+// --- Start of Guest Components ----//
+
+// --- Guest Component --- //
+.twitter-small-icon {
+  color: #1DA1F2;
+  padding: 8px;
+}
+
+.landing-header {
+  font-size: 64px;
+}
+
+.image {
+  background-color: #1DA1F2;
+  position: relative;
+}
+
+.twitter-large-icon {
+  color: white;
+  font-size: 300px;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+}
+
+.content {
+  min-height: calc(100vh - 64px);
+}
+
+.footer-bar a {
+  color: #536571;
+  line-height: 16px;
+  font-size: 13px;
+  text-decoration: none;
+  padding-right: 16px;
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+
+.footer-bar a:hover {
+  text-decoration: underline;
 }
 
 // --- Signin and Signup Widgets --- //
@@ -217,8 +258,8 @@
 .tweet-image img {
   display: block;
   margin: 0 auto;
-  max-width: 100%;
-  max-height: 400px;
+  max-width: 64px;
+  max-height: 64px;
   border-radius: 15px;
 }
 
@@ -232,7 +273,3 @@
   color: #1A8CD8;
   text-decoration: underline;
 }
-
-// --- End of User Components ----//
-  
-

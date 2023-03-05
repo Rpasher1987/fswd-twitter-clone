@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   root 'static_pages#home'
-
+ 
+  get '/:username'                 => 'static_pages#userpage'
+  
   namespace :api do
     # USERS
     post '/users'                  => 'users#create'
@@ -15,9 +17,8 @@ Rails.application.routes.draw do
     get  '/tweets'                 => 'tweets#index'
     delete '/tweets/:id'           => 'tweets#destroy'
     get  '/users/:username/tweets' => 'tweets#index_by_user'
-    get  '/tweets/search/:keyword' => 'tweets#search'
   end
 
-  get '*path' => 'static_pages#home'
-  # if you are using active storage to upload and store images, comment the above line
+  #get '*path' => 'static_pages#home'
+
 end
